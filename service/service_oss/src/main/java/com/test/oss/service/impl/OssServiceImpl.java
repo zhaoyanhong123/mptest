@@ -38,7 +38,7 @@ public class OssServiceImpl implements OssService {
             //获取文件名称
             String fileName=dataPath+"/"+uuid+multipartFile.getOriginalFilename();
             //第一个参数bucketName
-            //第二个参数 上传到oss文件路径和文件名称
+            //第二个参数 上传到oss文件路径和文件名称1
             //第三个参数 上传文件输入流
             ossClient.putObject(bucketName, fileName, inputStream);
 
