@@ -2,8 +2,9 @@ package com.test.oss.controller;
 
 import com.test.commonutils.R;
 import com.test.oss.service.OssService;
+import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,6 +23,7 @@ public class OssController {
         //获取上传文件 MultipartFile
         //返回上传到oss的路径
         String url = ossService.uploadFileAvatar(multipartFile);
+        System.out.println("url========"+url);
         return R.ok().data("url",url);
     }
 }

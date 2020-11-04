@@ -8,7 +8,6 @@ import com.test.commonutils.R;
 import com.test.eduservice.entity.EduTeacher;
 import com.test.eduservice.entity.vo.TeacherQuery;
 import com.test.eduservice.service.EduTeacherService;
-import com.test.servicebase.exceptionhandler.GuliException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
