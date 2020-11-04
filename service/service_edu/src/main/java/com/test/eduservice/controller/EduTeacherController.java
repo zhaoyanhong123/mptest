@@ -40,7 +40,7 @@ public class EduTeacherController {
         return R.ok().data("items", list);
     }
 
-    @ApiOperation(value = "逻辑删除讲师")
+    @ApiOperation(value = "逻辑删除讲师 ")
     @DeleteMapping("{id}")
     public R removeTeacher(@ApiParam(name = "id", value = "讲师ID", required = true) @PathVariable String id) {
         boolean flag = teacherService.removeById(id);
